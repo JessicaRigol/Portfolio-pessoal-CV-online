@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* MENU LATERAL ESQUERDO */
+nav {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+nav ul li {
+    border-bottom: 1px solid #444;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul h1 {
+    padding: 15px;
+    font-size: 12px;
+}
+
+/* LATERAL DIREITO, só visual */
+.lateral-direita {
+    margin-left: 50px;
+    margin-right: 50px; 
+    padding: 55px;
+    font-size: 20px;
+    text-align: justify;
+    background-color: #dddddd50;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    margin-left: 200px; 
+    padding: 20px;
+    flex: 1;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+div {
+    margin-left: 50px;
+    margin-right: 50px; 
+    padding: 55px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* IMAGENS */
+
+img {
+    width: 1250px;
+    height: 250px;
+}
+
+
+/* RODAPÉ */
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #ddd;
+    padding: 10px 15px;
+    border-top-left-radius: 10px;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+
+/* CONTATO */
+.mensagem {
+    width: 300px;
+    height: 100px;
+    font-size: 16px;
+    padding: 8px;
+}
